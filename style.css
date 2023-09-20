@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*colores
+#000000
+#6527BE
+#BDBDD7
+#D9D9D9
+#F5EDED
+
+#A076F9 /*gradient*/
+*/
+
+/*fuentes
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/*HEADER---------------------*/
+/*Navbar*/
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #BDBDD7 solid 1px;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.sello-principal{
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    padding-left: 1rem;
+    text-decoration: none;
+}
+
+.search-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.search-container input{
+    height: 2rem;
+    width: 15rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 0;
+    outline: none;
+    padding-left: 1rem;
+    background-color: #F5EDED;
+}
+.search-container button{
+    height: 2rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 0;
+    padding-right: 0.2rem;
+    padding-left: 0.3rem;
+    background-color: #F5EDED;
+    cursor: pointer;
+}
+
+.icons-notificaciones{
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+}
+.icono-search{
+    width: 16px;
+    height: 16px;
+}
+
+/*Banner*/
+.banner-negro{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #F5EDED;
+}
+
+/*Agregar comunidades index*/
+
+.agregar-grupos{
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: #6627be8c solid 1px;
+}
+.agregar-grupos p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 0.4rem;
+}
+.agregar-grupos div{
+    display: inline-flex;
+    border: #000 solid 1px;
+    border-radius: 50%;
+    padding: 2rem;
+}
+
+/*Flex cards artistas*/
+.contenedor-cards-artistas-hero{
+    padding: 3rem 2rem;
+}
+.titulo-genero{
+    padding-left: 2rem;
+    padding-bottom: 1.7rem;
+    padding-top: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.9rem;
+}
+.titulo-explorar{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+}
+.flex-cards-artistas{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 1.2rem;
+}
+.flex-cards-artistas div{
+    background-color: #F5EDED;
+    border-radius: 10%;
+}
+.tamano-img-artist{
+    width: 15rem;
+    height: 16.8rem;
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
+}
+.tamano-img-artist:hover{
+    transform: scale(1.02);
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+}
+.footer-img-artist{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    column-gap: 0.4rem;
+}
+.footer-img-artist:hover{
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    background-color: #6627be6e;
+}
+.footer-img-artist img{
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.footer-img-artist img:hover{
+    transform:scale(1.1);
+}
+.footer-img-artist strong{
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: larger;
+}
+
+/*CONTENEDOR DE CARS GENEROS*/
+
+.contenedor-generos-her{
+    padding: 2rem 4rem;
+    background-color: #F5EDED;
+}
+.contenedor-generos-her h1{
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    color: #000;
+}
+.cards-generos{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+.cards-generos div{
+    width: 12rem;
+    height: 10rem;
+    background-color: #6527BE;
+    border-radius: 5%;
+    box-shadow: 0 0 20px #aa00ff;
+}
+.cards-generos div:hover{
+    background-color: #000;
+}
+.cards-generos div a{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/*Anuncio de creación de cuenta*/
+.contenedor-anuncio-fans{
+    background-image: url(./assets/img/anuncio.jpg);
+    padding:5rem 2.2rem;
+}
+.anuncio-fans{
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    padding: 3rem 2rem;
+}
+
+.anuncio-fans h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.anuncio-fans button{
+    padding: 0.7rem;
+    border-radius: 7%;
+    border-style: hidden;
+    background-color: #068FFF;
+    color: #fff;
+}
+.anuncio-fans div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #526D82;
+    row-gap: 0.8rem;
+}
+
+.anuncio-fans div a{
+    color: #068FFF;
+}
+
+/*FOOTER*/
+a{
+    text-decoration: none;
+}
+.container-footer{
+    padding: 1rem;
+}
+.container-footer div{
+    display: inline-flex;
+    width: 100%;
+    column-gap: 1rem;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+.container-footer p{
+    display: flex;
+    justify-content: center;
+    color: #526D82;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 1rem;
+}
+
+
+
+
+/* -------------css BTS PROFILE*/
+
+.contenedor-perfil-artist{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 7rem 2rem 7rem;
+    /* background: -moz-linear-gradient(bottom, #aa00ff34, rgba(255, 255, 255, 0.5));
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#aa00ff96), to(rgba(255, 255, 255, 0.5))); */
+}
+
+/*Caja de Logo artista y nombre*/
+.artist-logo-y-nombre{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+.artist-logo-y-nombre div{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+.artist-logo-y-nombre div h1{
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+.artist-logo{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+.icono-verificado{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/*Caja de numero de miembros y boton de unirse*/
+.caja-miembros-y-unirse{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    column-gap: 3rem;
+}
+.caja-miembros-y-unirse div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.caja-miembros-y-unirse div p:first-child{
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+
+
+
+/*ajustes en boton de unirse*/
+.contenedor-perfil-artist div button{
+    padding: 0.4rem 3rem 0.4rem 3rem;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 0.8rem;
+    border-style: none;
+    box-shadow: 0 0 20px #aa00ff; 
+}
+
+
+/*Menu del perfil*/
+.menu-profile-container{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid #BDBDD7 1px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.menu-profile-container a{
+    display: flex;
+    align-items: center;
+    column-gap: 0.7rem;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+/*Fan letter*/
+.fan-letter-section{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    background-color: #f5eded5b;
+}
+.fan-letter-section a{
+    display: flex;
+    align-items: center;
+    color: #000;
+    column-gap: 0.5rem;
+    padding: 2rem 1rem 2rem 4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+/*Container con la descripción del artista*/
+.container-about-artist{
+    display: flex;
+    column-gap: 2rem;
+    padding: 1rem 2rem;
+}
+.foto-about-artist{
+    width: 21rem;
+    height: 25rem;
+    border-radius: 0.5rem;
+}
+
+/*Container foto artistas + descripción| Perfiles de artistas*/
+.container-descripcion-artistas{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding-bottom: 1rem;
+}
+.container-descripcion-artistas p:first-child{
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.container-descripcion-artistas p:nth-child(2){
+    font-family: 'Roboto', sans-serif;
+}
+.container-descripcion-artistas p:nth-child(3){
+    font-family: 'Roboto', sans-serif;
+}
+.negrita-primera-palabra{
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*container perfiles de artistas*/
+.container-perfiles-integrantes{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.container-perfiles-integrantes img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.container-perfiles-integrantes div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .5rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/*Media Queries INDEX.HTML*/
+@media (max-width: 1088px){
+    .cards-generos{
+        justify-content: center;
+        column-gap: 1.3rem;
+    }
+}
+
+@media (max-width: 790px){
+    nav{
+        justify-content: space-around;
+        row-gap: 2rem;
+        flex-wrap: wrap;
+    }
+    .search-container input{
+        display: none;
+    }
+    .icons-notificaciones{
+        width: 100%;
+    }
+
+    .container-footer div{
+        font-size: 0.7rem;
+    }
+    .container-footer p{
+        font-size: 0.8rem;
+    }
+    .anuncio-fans div p{
+        font-size: 0.9rem;
+    }
+    .anuncio-fans h2{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 563px){
+    .banner-negro div{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 524px){
+    .contenedor-generos-her{
+        padding: 1rem 1rem;
+        padding-bottom: 2rem;
+        background-color: #000;
+    }
+    .cards-generos div{
+        width: 8rem;
+        height: 8rem;
+    }
+    .contenedor-generos-her h1{
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 445px){
+    .agregar-grupos p{
+        font-size: 1.2rem;
+    }
+    .container-footer p{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 406px){
+    .logo-principal strong{
+        font-size: smaller;
+    }
+    .anuncio-fans h2{
+        font-size: 1.5rem;
+    }
+    .anuncio-fans div p{
+        font-size: 0.8rem;
+    }
+    .banner-negro div{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 367px){
+    .anuncio-fans{
+        flex-wrap: wrap;
+        row-gap: 1.2rem;
+    }
+    .container-footer div{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0.5rem;
+        row-gap: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+
+
+
+
+

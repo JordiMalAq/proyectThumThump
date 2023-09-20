@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registro</title>
+<link rel="stylesheet" href="registro.css">
+<link rel="shortcut icon" href="./assets/icons/sonido-de-onda.png" type="image/x-icon">
+</head>
+<body>
+
+
+
+<section class="ingresar">¿Ya tienes cuenta?<button class="button">Ingresar</button></section>
+
+<div class="registro">
+
+    <div class="tittle">
+        <a class="sello-principal" href="index.html"><img src="./assets/icons/sonido-de-onda.png" alt="Onda de sonido"><strong>ThumpThump</strong></a>
+        <h4 class="registrate">Regístrate</h4>
+    </div>
+    
+
+    <form action="procesar_registro.php" method="POST">
+    
+    <input class="data" type="text" id="name" placeholder="Nombre de usuario" required><br><br>
+
+    <input class="data" type="email" id="email" placeholder="correo electronico" required><br><br>
+
+    <input class="data" type="password" id="password" placeholder="contraseña" required><br><br>
+
+    <input class="data" type="password" id="confirmPassword" placeholder="repetir contraseña" required>
+
+    <h4>Fecha de Nacimiento</h4>
+    
+    <div class="Fecha-nacimiento">
+
+        <form>
+
+            <input class="fecha" type="number" id="dia" placeholder="Día" name="dia" min="1" max="31">
+    
+            <input class="fecha" type="number" id="mes" placeholder="Mes" name="mes" min="1" max="12">
+    
+            <input class="fecha" type="number" id="año" placeholder="Año" name="año" min="1900" max="2099">
+        </form>
+    </div>
+
+    <!-- <button class="crear-cuenta" onclick="">crear cuenta</button> -->
+    <input class="crear-cuenta" type="button" value="crear cuenta" onclick="verificarYRedirigir()">
+
+    <section>
+        <div class="terminos">
+            <h5>Al hacer click en "CREAR CUENTA", acepta los <a href="terminos.html">Términos y Condiciones de uso</a> de ThumpThump.</h5>
+        </div>
+
+    </section>
+    
+    <script src="registro.js"></script>
+    
+</div>
+</section>
+</form>
+</body>
+</html>

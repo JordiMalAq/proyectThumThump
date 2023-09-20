@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="registro.css">
+    <link rel="shortcut icon" href="./assets/icons/sonido-de-onda.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="ingreso">
+
+        <div class="tittle">
+            <a class="sello-principal" href="index.html"><img src="./assets/icons/sonido-de-onda.png" alt="Onda de sonido"><strong>ThumpThump</strong></a><br><br>
+        </div>
+        
+    
+        <form action="index.html" method="POST">
+        
+        <input class="data" type="text" id="name" placeholder="Nombre de usuario" required><br><br>
+    
+        <input class="data" type="password" id="password" placeholder="contraseña" required><br><br>
+        
+        <!-- <button class="entrar" type="button" id="entrar">ENTRAR</button> -->
+        <input class="entrar" type="button" value="entrar" onclick="entrar()">
+
+        <section class="links-externos">
+            <div class="recuperar">
+                <h5>¿Olvidaste tu contraseña?  <a href="recuperar.html">Recuperar</a></h5>
+            </div>
+            <div class="registrarse">
+                <h5>¿Aún no tienes cuenta?  <a href="registro.html">Registrate</a></h5>
+            </div>
+
+        
+        </section>   
+
+    </div>
+
+    <script src="login.js"></script>
+
+
+</body>
+</html>
