@@ -8,8 +8,9 @@ function verificarYRedirigir() {
     let año = document.getElementById("año").value;
 
     if (name && email && password && confirmPassword && dia && mes && año) {
-
         if (password === confirmPassword) {
+            localStorage.setItem("nombreUsuario", name);
+            localStorage.setItem("contraseña", password);
             window.location.href = "index.html";
         } else {
             alert("Las contraseñas no coinciden.");
@@ -18,4 +19,3 @@ function verificarYRedirigir() {
         alert("Por favor, completa todos los campos.");
     }
 }
-

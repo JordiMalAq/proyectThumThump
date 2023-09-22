@@ -72,7 +72,7 @@ nav{
 }
 
 .icons-notificaciones{
-    display: flex;
+    display: none;
     width: 25%;
     justify-content: space-around;
 }
